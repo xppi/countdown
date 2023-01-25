@@ -1,0 +1,1 @@
+import{d as a,c as r,k as c,o as m}from"./index-f3be474a.js";import{C as u}from"./Countdown-e7e24e00.js";const l=a({__name:"CustomView",setup(p){const o=c(),{year:t,month:e,day:n}=o.params,s=`${t}/${e}/${n}`;return(_,i)=>(m(),r(u,{until:s}))}});export{l as default};

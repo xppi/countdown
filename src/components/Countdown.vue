@@ -10,7 +10,6 @@ const { until } = defineProps<{
 const clock = ref<HTMLDivElement>()
 const { height: windowHeight } = useWindowSize()
 const { height: clockHeight } = useElementSize(clock)
-const clockTop = computed(() => `${windowHeight.value / 2 - clockHeight.value / 2}px`)
 
 const now = useNow()
 const untilDayjs = dayjs(until)
@@ -37,15 +36,16 @@ const remainingFormatted = computed(() => {
 </script>
 
 <template>
-  <div ref="clock" :style="{ marginTop: clockTop }">
+  <div><img class="logo" src="/logo.png" alt=""></div>
+  <div ref="clock" class="clock">
     <p class="remaining">
-      Time Remaining
+      ERÖFFNUNG IN
     </p>
     <p class="time">
       {{ remainingFormatted }}
     </p>
     <p class="until">
-      Until {{ untilFormatted }}
+      AM {{ untilFormatted }}
     </p>
   </div>
 </template>
@@ -56,6 +56,10 @@ p {
   padding: 0;
   line-height: 7rem;
   color: #daf6ff;
+}
+.logo{
+  height: 400px;
+  opacity: 80%;
 }
 
 .time {

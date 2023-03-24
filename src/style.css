@@ -5,9 +5,9 @@ html, body {
 body {
     font-family: 'Share Tech Mono', monospace;
     text-align: center;
-    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+    text-shadow: 4px -6px 0px #ff92c9, 0 0 20px #86d8fffa;
     background: #0f3854;
-    background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 100%);
+    background: radial-gradient(ellipse at center,  #ff92c9  0%, #86d8fffa 100%);
     overflow: hidden;
     padding: 0.5rem;
 }

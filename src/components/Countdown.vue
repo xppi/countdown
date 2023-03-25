@@ -36,7 +36,7 @@ const remainingFormatted = computed(() => {
 </script>
 
 <template>
-  <div><img class="logo" src="/logo.png" alt=""></div>
+  <div><img class="logo" src="/trans500.png" alt=""></div>
   <div ref="clock" class="clock">
     <p class="remaining">
       ERÖFFNUNG IN

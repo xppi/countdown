@@ -3,5 +3,5 @@ import Countdown from '../components/Countdown.vue'
 </script>
 
 <template>
-  <Countdown until="2023/05/01" />
+  <Countdown until="2023/06/01" />
 </template>
